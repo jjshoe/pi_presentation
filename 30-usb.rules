@@ -1,0 +1,2 @@
+KERNEL=="sd?[0-9]", SUBSYSTEMS=="usb", ACTION=="add", RUN=="/usr/local/bin/pi_presentation.pl %k start", ENV{UDISKS_PRESENTATION_HIDE}="1"
+KERNEL=="sd?[0-9]", SUBSYSTEMS=="usb", ACTION=="remove", RUN=="/usr/local/bin/pi_presentation.pl %k stop", ENV{UDISKS_PRESENTATION_HIDE}="1"
